@@ -14,6 +14,10 @@ class TestCase(unittest.TestCase):
     # Test 3 checks to see if password at correct length but with all digits 
     # returns False
     def test3(self):
-        self.assertFalse(check_pwd("123456789")) 
+        self.assertFalse(check_pwd("123456789"))
+
+    # Test 4 checks to see if password at correct length but with all lowercase
+    def test4(self):
+        self.assertFalse(check_pwd("abcdefghi"))
 if __name__ == '__main__':
     unittest.main()
