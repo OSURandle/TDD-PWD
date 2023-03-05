@@ -8,4 +8,7 @@ def check_pwd(pwd):
     if pwd.islower():
         return False
 
+    if pwd.isupper():
+        return False
+
     return True
