@@ -11,7 +11,7 @@ class TestCase(unittest.TestCase):
     def test2(self):
         self.assertFalse(check_pwd("123456789123456789123"))
 
-    # Test 3 checks to see if password at correct length but with all digits 
+    # Test 3 checks to see if password at correct length but with all digits
     # returns False
     def test3(self):
         self.assertFalse(check_pwd("123456789"))
@@ -19,5 +19,12 @@ class TestCase(unittest.TestCase):
     # Test 4 checks to see if password at correct length but with all lowercase
     def test4(self):
         self.assertFalse(check_pwd("abcdefghi"))
+
+    # Test 5 checks to see if password at correct length but all uppercase 
+    # returns False
+    def test5(self):
+        self.assertFalse(check_pwd("ABCDEFGHI"))
+
+
 if __name__ == '__main__':
     unittest.main()
