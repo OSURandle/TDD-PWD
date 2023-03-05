@@ -5,4 +5,8 @@ def check_pwd(pwd):
     if len(pwd) > 20:
         return False
 
+    if pwd.isdigit():
+        return False
+    
+    
     return True
