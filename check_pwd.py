@@ -3,7 +3,7 @@ def check_pwd(pwd):
     if len(pwd) < 8 or len(pwd) > 20:
         return False
 
-    if pwd.isdigit():
+    if not any(char.isdigit() for char in pwd):
         return False
 
     if pwd.islower():
