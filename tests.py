@@ -25,6 +25,11 @@ class TestCase(unittest.TestCase):
     def test5(self):
         self.assertFalse(check_pwd("ABCDEFGHI"))
 
+    # Test 6 checks to see if password at correct length matching all specs 
+    # but with no symbols returns False
+    def test6(self):
+        self.assertFalse(check_pwd("a1b2C3B4"))
+
 
 if __name__ == '__main__':
     unittest.main()
