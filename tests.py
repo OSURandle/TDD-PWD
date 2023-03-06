@@ -30,6 +30,11 @@ class TestCase(unittest.TestCase):
     def test6(self):
         self.assertFalse(check_pwd("a1b2C3B4"))
 
+    # Test 7 checks to see if password matching all specifications but with no digits
+    # returns False
+    def test7(self):
+        self.assertFalse(check_pwd("aaSB%MHM"))
+
 
 if __name__ == '__main__':
     unittest.main()
