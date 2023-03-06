@@ -40,5 +40,6 @@ class TestCase(unittest.TestCase):
     def test8(self):
         self.assertFalse(check_pwd("12!@89%^"))
 
+
 if __name__ == '__main__':
     unittest.main()
