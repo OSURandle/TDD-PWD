@@ -30,11 +30,15 @@ class TestCase(unittest.TestCase):
     def test6(self):
         self.assertFalse(check_pwd("a1b2C3B4"))
 
-    # Test 7 checks to see if password matching all specifications but with no digits
-    # returns False
+    # Test 7 checks to see if password matching all specifications but with no
+    # digits returns False
     def test7(self):
         self.assertFalse(check_pwd("aaSB%MHM"))
 
+    # Test 8 checks to see if password matching all specifications but with no
+    # letters returns False
+    def test8(self):
+        self.assertFalse(check_pwd("12!@89%^"))
 
 if __name__ == '__main__':
     unittest.main()
